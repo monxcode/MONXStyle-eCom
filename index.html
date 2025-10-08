@@ -243,7 +243,7 @@
             justify-content: center;
             text-align: center;
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat fixed;
+                                                url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat fixed;
             color: white;
             position: relative;
             overflow: hidden;
@@ -791,6 +791,13 @@
             border-radius: var(--border-radius);
             margin-right: 1rem;
             flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .wishlist-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .wishlist-item-details {
@@ -835,6 +842,13 @@
             border-radius: var(--border-radius);
             margin-right: 1rem;
             flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .cart-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .cart-item-details {
@@ -918,6 +932,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-view-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .product-view-details h2 {
@@ -1334,8 +1355,7 @@
                 <!-- Product 1 -->
                 <div class="product-card" data-category="men" data-price="1899">
                     <div class="product-image">
-                        <!-- Product Image Here -->
-                        <img src="Denim jacket.jpg" alt="product-image">
+                        <img src="Denim.jpg" alt="Classic Denim Jacket">
                         <div class="product-badge">New</div>
                     </div>
                     <div class="product-info">
@@ -1359,8 +1379,7 @@
                 <!-- Product 2 -->
                 <div class="product-card" data-category="women" data-price="2499">
                     <div class="product-image">
-                        <!-- Product Image Here -->
-                        <img src="floraldress.png" alt="product-image">
+                        <img src="floraldress.png" alt="Floral Summer Dress">
                         <div class="product-badge">Bestseller</div>
                     </div>
                     <div class="product-info">
@@ -1384,11 +1403,10 @@
                 <!-- Product 3 -->
                 <div class="product-card" data-category="men" data-price="1599">
                     <div class="product-image">
-                        <!-- Product Image Here -->
-                        <img src="jeans.png" alt="product-image">
+                        <img src="jeans.png" alt="Slim Fit Jeans">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Baggy jeans</h3>
+                        <h3 class="product-name">Slim Fit Jeans</h3>
                         <p class="product-price">₹1,599</p>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
@@ -1408,8 +1426,7 @@
                 <!-- Product 4 -->
                 <div class="product-card" data-category="women" data-price="1299">
                     <div class="product-image">
-                      <img src="Classic Tshirt.jpg" alt="product-image">
-                        <!-- Product Image Here -->
+                        <img src="Classic Tshirt.jpg" alt="Casual T-Shirt">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Casual T-Shirt</h3>
@@ -1432,8 +1449,7 @@
                 <!-- Product 5 -->
                 <div class="product-card" data-category="kids" data-price="899">
                     <div class="product-image">
-                        <!-- Product Image Here -->
-                        <img src="kids tshirt.jpg" alt="product-image">
+                        <img src="kids tshirt.jpg" alt="Kids Printed T-Shirt">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Kids Printed T-Shirt</h3>
@@ -1453,14 +1469,10 @@
                     </div>
                 </div>
                 
-                <!-- Additional products would be added here in a real implementation -->
-                <!-- For demo purposes, we'll add a few more product placeholders -->
-                
                 <!-- Product 6 -->
                 <div class="product-card" data-category="men" data-price="3499">
                     <div class="product-image">
-                        <!-- Product Image Here -->
-                        <img src="leather Jacket.jpg" alt="product-image">
+                        <img src="leather Jacket.jpg" alt="Premium Leather Jacket">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Premium Leather Jacket</h3>
@@ -1483,8 +1495,7 @@
                 <!-- Product 7 -->
                 <div class="product-card" data-category="women" data-price="2999">
                     <div class="product-image">
-                        <!-- Product Image Here -->
-                        <img src="Gowns.jpg" alt="product-image">
+                        <img src="Gowns.jpg" alt="Elegant Evening Gown">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Elegant Evening Gown</h3>
@@ -1507,8 +1518,7 @@
                 <!-- Product 8 -->
                 <div class="product-card" data-category="kids" data-price="1199">
                     <div class="product-image">
-                        <!-- Product Image Here -->
-                        <img src="kisdDenim.jpg" alt="product-image">
+                        <img src="kisdDenim.jpg" alt="Kids Denim Jacket">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Kids Denim Jacket</h3>
@@ -1527,6 +1537,57 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Product 9 -->
+                <div class="product-card" data-category="men" data-price="2199">
+                    <div class="product-image">
+                        <img src="Denim jacket.jpg" alt="Denim Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Denim Jacket</h3>
+                        <p class="product-price">₹2,199</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional products would continue here with placeholder images -->
+                <!-- For demo purposes, we'll add a few more product placeholders -->
+                
+                <!-- Product 10 -->
+                <div class="product-card" data-category="women" data-price="1799">
+                    <div class="product-image">
+                        <!-- Product Image Here -->
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Casual Summer Top</h3>
+                        <p class="product-price">₹1,799</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Continue adding products until 25 as needed -->
             </div>
         </div>
     </section>
@@ -1989,16 +2050,17 @@
             products = [
                 { id: 1, name: "Classic Denim Jacket", price: 1899, category: "men", rating: 4.5, description: "A timeless denim jacket perfect for casual outings. Made from premium quality denim with a comfortable fit." },
                 { id: 2, name: "Floral Summer Dress", price: 2499, category: "women", rating: 4, description: "Beautiful floral print summer dress with a flowy silhouette. Perfect for warm weather and special occasions." },
-                { id: 3, name: "Slim Fit Chinos", price: 1599, category: "men", rating: 5, description: "Comfortable slim-fit chinos in versatile colors. Ideal for both casual and semi-formal occasions." },
+                { id: 3, name: "Slim Fit Jeans", price: 1599, category: "men", rating: 5, description: "Comfortable slim-fit jeans in versatile colors. Ideal for both casual and semi-formal occasions." },
                 { id: 4, name: "Casual T-Shirt", price: 1299, category: "women", rating: 4.5, description: "Soft and comfortable casual t-shirt available in multiple colors. Perfect for everyday wear." },
                 { id: 5, name: "Kids Printed T-Shirt", price: 899, category: "kids", rating: 4, description: "Fun printed t-shirt for kids, made from child-friendly materials that are soft and durable." },
                 { id: 6, name: "Premium Leather Jacket", price: 3499, category: "men", rating: 4.5, description: "High-quality leather jacket with a modern cut. Offers both style and durability for years to come." },
                 { id: 7, name: "Elegant Evening Gown", price: 2999, category: "women", rating: 5, description: "Stunning evening gown with elegant details. Perfect for formal events and special occasions." },
-                { id: 8, name: "Kids Denim Jacket", price: 1199, category: "kids", rating: 4, description: "Mini version of our classic denim jacket, designed specifically for kids with comfort in mind." }
+                { id: 8, name: "Kids Denim Jacket", price: 1199, category: "kids", rating: 4, description: "Mini version of our classic denim jacket, designed specifically for kids with comfort in mind." },
+                { id: 9, name: "Classic Denim Jacket", price: 2199, category: "men", rating: 4, description: "A versatile denim jacket that pairs well with any outfit. Perfect for layering in any season." }
             ];
             
             // Add more products to reach 25
-            for (let i = 9; i <= 25; i++) {
+            for (let i = 10; i <= 25; i++) {
                 const categories = ["men", "women", "kids"];
                 const category = categories[Math.floor(Math.random() * categories.length)];
                 const price = Math.floor(Math.random() * 4000) + 500;
@@ -2248,7 +2310,8 @@
                     id: productId,
                     name: product.name,
                     price: product.price,
-                    quantity: 1
+                    quantity: 1,
+                    image: document.querySelector(`.product-card:nth-child(${productId}) .product-image img`).src
                 });
             }
             
@@ -2274,7 +2337,8 @@
                 wishlist.push({
                     id: productId,
                     name: product.name,
-                    price: product.price
+                    price: product.price,
+                    image: document.querySelector(`.product-card:nth-child(${productId}) .product-image img`).src
                 });
             }
             
@@ -2317,7 +2381,7 @@
                 cartItem.className = 'cart-item';
                 cartItem.innerHTML = `
                     <div class="cart-item-image">
-                        <!-- Product Image Here -->
+                        <img src="${item.image}" alt="${item.name}">
                     </div>
                     <div class="cart-item-details">
                         <div class="cart-item-name">${item.name}</div>
@@ -2376,7 +2440,7 @@
                 wishlistItem.className = 'wishlist-item';
                 wishlistItem.innerHTML = `
                     <div class="wishlist-item-image">
-                        <!-- Product Image Here -->
+                        <img src="${item.image}" alt="${item.name}">
                     </div>
                     <div class="wishlist-item-details">
                         <div class="wishlist-item-name">${item.name}</div>
@@ -2418,7 +2482,7 @@
             if (!product) return;
             
             const modal = document.querySelector('.product-modal');
-            const image = modal.querySelector('.product-view-image');
+            const imageContainer = modal.querySelector('.product-view-image');
             const name = modal.querySelector('.product-view-details h2');
             const rating = modal.querySelector('.product-view-rating');
             const price = modal.querySelector('.product-view-price');
@@ -2430,6 +2494,10 @@
             name.textContent = product.name;
             price.textContent = `₹${product.price}`;
             description.textContent = product.description;
+            
+            // Update product image
+            const productImage = document.querySelector(`.product-card:nth-child(${productId}) .product-image img`).src;
+            imageContainer.innerHTML = `<img src="${productImage}" alt="${product.name}">`;
             
             // Update rating stars
             rating.innerHTML = '';
@@ -2552,6 +2620,13 @@
             flyingElement.style.top = `${rect.top}px`;
             flyingElement.style.zIndex = '1001';
             flyingElement.style.pointerEvents = 'none';
+            
+            // Add product image to flying element
+            const img = productCard.querySelector('.product-image img').cloneNode(true);
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            flyingElement.appendChild(img);
             
             document.body.appendChild(flyingElement);
             
